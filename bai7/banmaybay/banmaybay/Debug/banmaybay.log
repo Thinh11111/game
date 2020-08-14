@@ -1,0 +1,3 @@
+﻿  MainObject.cpp
+D:\proj\banmaybay\banmaybay\MainObject.cpp(99,68): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  banmaybay.vcxproj -> D:\proj\banmaybay\Debug\banmaybay.exe
