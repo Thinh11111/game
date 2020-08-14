@@ -12,6 +12,8 @@ const int SCREEN_WIDTH = 1200;
 const int SCREEN_HEIGHT = 600;
 //khoi tao BPP
 const int SCREEN_BPP = 32;
+//so luong may bay dich
+const int NUM_THREATS = 4;
 //quan li man hinh
 static SDL_Surface* g_screen = NULL;
 //quan li background anh

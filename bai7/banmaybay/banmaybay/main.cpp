@@ -1,7 +1,7 @@
 #include"Common_Function.h"
 #include"MainObject.h"
 #undef main
-
+#include "ThreatsObject.h"
 
 //khoi tao ban dau
 bool Init()
@@ -44,6 +44,42 @@ int main(int arc, char* argv[])
 	//kt ret sai thi tra ve 0
 	if (!ret) {
 		return 0;
+	}
+	//tao nhiu doi tuong dich
+	ThreatObject* p_threats = new ThreatObject[NUM_THREATS];
+	for (int t = 0; t < NUM_THREATS; t++)
+	{
+		//tao moi doi tuong dich
+		ThreatObject* p_threat = (p_threats+t);
+		//kt khac NULL
+		if (p_threat)
+		{
+			//load anh may bay dich
+			ret = p_threat->LoadImg("222.png");
+			//neu load anh loi thi dung ctrinh
+			if (ret == false)
+			{
+				return 0;
+			}
+
+			//tao so luong may bay dich ngau nhien
+			int rand_y = rand() % 400;
+			//kt so luong vuot qua man hinh 
+			if (rand_y > SCREEN_HEIGHT)
+			{
+				//tao lai
+				rand_y = SCREEN_HEIGHT * 0.3;
+			}
+
+			//dua anh ra man hinh
+			p_threat->SetRect(SCREEN_WIDTH + t * 400, rand_y);
+			//toc do di chuyen
+			p_threat->set_x_val(3);
+			//khoi tao vien dan
+			AmoObject* p_amo = new AmoObject();
+			p_threat->InitAmo(p_amo);
+		}
+		
 	}
 	
 	
@@ -98,10 +134,31 @@ int main(int arc, char* argv[])
 				}
 			}
 		}
+
+		//chay doi tuong dich
+
+		for (int th = 0; th < NUM_THREATS; th++)
+		{
+			ThreatObject* p_threat = (p_threats+th);
+			//kt khac NULL
+			if (p_threat)
+			{
+				//dua cac doi tuong ra man hinh
+				p_threat->Show(g_screen);
+				p_threat->HandleMove(SCREEN_WIDTH, SCREEN_HEIGHT);
+
+				p_threat->MakeAmo(g_screen, SCREEN_WIDTH, SCREEN_HEIGHT);
+			}
+			
+		}
+		
+
 		//kt man hinh 
 		if (SDL_Flip(g_screen) == -1)
 			return 0;
 	}
+	//xoa may bay dich
+	delete[]p_threats;
 	SDLCommonFunc::CleanUp();
 	SDL_Quit();
 	return 0;

@@ -23,6 +23,9 @@ public:
     ~AmoObject();
     void HandleInputAction(SDL_Event events);
     void HandleMove(const int& x_border, const int& y_border);
+
+    void HandleMoveRighttoLeft();
+
     //ham get set de lay cac gia tri
     int get_type() const { return amo_type_; }
     void set_type(const int& type) { amo_type_ = type; }

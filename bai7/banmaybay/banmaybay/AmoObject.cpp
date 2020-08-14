@@ -29,7 +29,16 @@ void AmoObject::HandleMove(const int& x_border, const int& y_border)
         }
     }
 }
-
+//ham di chuyen dan tu phai sang trai
+void AmoObject::HandleMoveRighttoLeft()
+{
+    //toc do ban
+    Rect_.x -= 10;
+    if (Rect_.x < 0)
+    {
+        is_move_ = false;
+    }
+}
 void AmoObject::HandleInputAction(SDL_Event events)
 {
     ;//Todo
