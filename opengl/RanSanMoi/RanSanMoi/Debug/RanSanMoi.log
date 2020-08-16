@@ -1,0 +1,13 @@
+﻿  game.cpp
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(58,19): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(58,16): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(60,25): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(60,18): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(75,44): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(75,33): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(75,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(75,13): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+D:\proj\RanSanMoi\RanSanMoi\game.cpp(127,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Main.cpp
+  Generating Code...
+  RanSanMoi.vcxproj -> D:\proj\RanSanMoi\Debug\RanSanMoi.exe
