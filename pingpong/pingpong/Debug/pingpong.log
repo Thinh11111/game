@@ -1,0 +1,21 @@
+﻿  Source.cpp
+D:\proj\pingpong\pingpong\Source.cpp(19,33): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\proj\pingpong\pingpong\Source.cpp(107,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+D:\proj\pingpong\pingpong\Source.cpp(125,28): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+D:\proj\pingpong\pingpong\Source.cpp(183,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(183,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(201,40): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(201,26): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(229,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(230,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(231,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(270,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(271,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(272,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(273,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(277,8): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(302,15): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(303,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(309,15): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+D:\proj\pingpong\pingpong\Source.cpp(310,9): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  pingpong.vcxproj -> D:\proj\pingpong\Debug\pingpong.exe
